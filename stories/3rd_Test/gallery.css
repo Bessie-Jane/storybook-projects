@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* 
+.pictureContainer {
+    width: 180px;
+    height: 246px;
+    background-color: grey;
+} */
+
+/* .myImage {
+    background-image: url("./assets/HairCutPictures/manHairstyle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 180px;
+}   */
+
+
+.galleryWrapper {
+    max-width: 100%;
+    width: 640px;
+    border: 2px solid rgb(180, 180, 180, 0.3);
+    /* margin: 0px 32px 0px 32px;   */
+}
+
+.subWrapper {
+    margin: 32px 32px 0;  
+}
+
+
+.galleryHeader {
+    color: #1d252d;
+    font-size: 24px;
+}
+
+.galleryType, .subtitle {
+    color: #506d85;
+}
+
+.galleryType {
+    font-size: 14px;
+}
+
+
+.gridContainer1 {
+    padding-top: 32px; 
+}
+
+.subtitle {
+    padding-bottom: 12px;
+    font-size: 12PX;
+    font-weight: 600;
+}
+
+.gridContainer2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(180px, 180px)); */
+    gap: 16px; 
+    margin-top: 21px;
+}
+
+/* Image Template */
+
+.pictureContainer {
+    width: 100%;
+    height: 246px;
+    /* background-color: grey; */
+    padding: 0 0 15px;
+    margin: 0;
+    box-shadow: 0 2px 14px 0 rgba(29, 37, 45, 0.05);
+    border: solid 0.5px #dde5ed;
+    background-color: #fff;
+}
+
+.myImage {
+    height: 180px;
+    width: inherit;
+    position: relative;
+}
+
+img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover; 
+}
+
+.imgThumb {
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    padding: 2px 7px 7px 6px;
+    border-radius: 40px;
+    bottom: 36px;
+    box-shadow: 0 1px 7px 0 rgba(29, 37, 45, 0.2);
+    position: absolute;
+    background-color: #fff;
+    color: #8ba6c1;
+}
+
+.imgText {
+    position: absolute;
+    left: 18px;
+    bottom: 13px;
+    color: #fff;
+    /* font-family: 'IBM Plex Sans', sans-serif; */
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.nameAndAmt {
+    /* font-family: 'IBM Plex Sans', sans-serif; */
+    color: #1d252d;
+    padding-top: 13px;
+    padding-left: 16px;
+    font-weight: 600;
+}
+
+.name {
+    font-size: 12px;
+}
+
+.amount {
+    font-size: 16px;
+    padding-top: 6px;
+}
+
+@media screen and (max-width: 430px) {
+    .gridContainer2 {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .gridContainer2 {
+        grid-template-columns: repeat(1, 1fr);  
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

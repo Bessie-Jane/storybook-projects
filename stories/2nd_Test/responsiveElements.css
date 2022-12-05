@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container { 
+    background-color: rgb(255, 247, 247); 
+    /* background-color: red; */
+}
+
+.resBox {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    column-gap: 24px; 
+    padding: 0px 16px;
+}
+
+.itemBox {
+    width: 550px;
+    /* height: 88px; */
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.itemText, .itemAmt {
+    text-align: left;
+    font-family: 'Poppins', sans-serif; 
+    color: #fff;
+}
+
+.itemText {
+    font-size: 14px;  
+}
+
+.itemAmt {
+    margin-top: 8px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.itemBox--blue {
+    background-color: #48b3f5;  
+}
+
+.itemBox--yellow {
+    background-color:#feb63e;
+}
+
+.itemBox--green {
+    background-color: #1dbf80;
+}
+
+
+@media screen and (max-width: 850px) {  
+    .itemText {
+        font-size: 12px;
+    }
+
+    .itemAmt {
+        font-size: 24px;
+    }
+}
+
+
+@media screen and (max-width: 430px) {   
+    .resBox {
+        flex-direction: column;
+        row-gap: 8px; 
+        padding: 0px; 
+    }   
+
+    .itemBox {
+        max-width: 100%;
+        margin: auto;
+        width: 320px;
+    }     
+}
+
+@media screen and (max-width: 320px) { 
+    .itemBox {    
+        width: 230px;
+    }    
+}
+
+
+

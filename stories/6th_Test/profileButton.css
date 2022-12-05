@@ -1,0 +1,20 @@
+/* @import url('./profile-page-assests/Metropolis/Metropolis-Regular.otf'); */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.profileButton {
+    width: 133px;
+    height: 48px;
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    background-color: #1d252d;
+  
+    /* font-family: 'Metropolis-Regular', sans-serif; */
+}

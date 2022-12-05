@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;600;500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    color: #1d252d;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.contactCardDiv {
+    max-width: 1054px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 37px 42px;
+}
+
+.widgetHeadingDiv  {
+    margin: 47px 0;
+}
+
+.employee {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.location {
+    font-size: 12px;
+    color: #506d85;
+    margin: 51px 0 9px;
+}
+
+.address{
+    color: #1d252d;
+}
+
+.cardHolder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    gap: 64px;
+}
+
+
+
+/* Utilities */
+.widgetFlex {
+    display: flex;
+    justify-content: space-between;  
+}
+
+
+
+/* Breakpoints */
+
+@media screen and (max-width: 420px) {
+
+    .contactCardDiv {
+        margin: 0 25px;
+        padding: 0;
+    }
+
+    .cardHolder {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+    /* .widgetHeadingDiv {
+        margin-bottom: 38px;    
+    } */
+
+    .widgetFlex {
+        flex-direction: column;
+    }
+
+    .location {
+        font-size: 10px;
+        margin: 10px 0 9px;
+    }
+
+    .ccButton {
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .contactCardDiv {
+        margin: 0;
+    }
+}

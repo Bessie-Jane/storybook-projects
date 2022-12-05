@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;600;500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    color: #1d252d;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.contactPageDiv {
+    display: flex;
+    max-width: 1320px;
+    width: 100%;
+    box-shadow: 0 1px 1px 0 rgba(29, 37, 45, 0.2);
+    /* border: 1px solid rgba(29, 37, 45, 0.2); */
+}
+
+
+.sideInfoDisplayDiv {
+    width: 266px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.contactCardDisplay{
+    flex-grow: 4;
+    flex-shrink: 4;
+}
+
+
+@media screen and (max-width: 850px) {
+    .contactPageDiv{
+        flex-direction: column-reverse;
+    }
+
+    .sideInfoDisplayDiv {
+        width: 100%;
+    }
+}

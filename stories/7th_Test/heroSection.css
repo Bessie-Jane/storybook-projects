@@ -1,0 +1,346 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heroSectionContainer {
+    background-image: url("./hero-section-assets/hairstylistImg/hairstylist.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: #1d252d;
+    position: relative;
+    animation-name: heroSectionBackground;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    width: 1600px;
+    height: 1080px;
+}
+
+
+.navContainer {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding:  67px 40px;
+
+    /* background-color: brown; */
+    /* max-width: 1310px; */
+}
+
+.navLogo {
+    color: #fff;
+}
+
+.navLinksHolder {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.navLinksHolder li  {
+    display: inline-block;
+}
+
+.heroSectionNav a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 14px;
+}
+
+a[class=businessList]  {
+    color: #1d252d;
+    background-color: #fff;
+    padding: 8px ;
+    border-radius: 3px;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+.languageSelect {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.languageSelect option {
+    color: #fff;
+    background-color: #1d252d;
+}
+
+.servicesHead {
+    text-align: center;
+    margin: 170px 0 0 25px;
+    /* margin: 170px 0 0 360px; */
+}
+
+/* .servicesHead span {
+    display: none;
+    color: #fff;
+    animation-name: display;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+} */
+
+.servicesHead span::after {
+    content: "a";
+    color: #fff;
+    animation-name: correctGrammar;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+.servicesHead, .servicesHead::after {
+    content: "hairsytlist?";
+    color: #feb63e;
+    font-size: 80px;
+    font-weight: 900;
+    animation-name: services;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+.servicesText {
+    font-size: 40px;
+    text-align: center;
+    /* margin: 20px 0 0 280px; */
+}
+
+.servicesText::before {
+    content: "Find great hairstylists and gorgeous hairstyles";
+    text-align: center;
+    /* margin: 0 0 0 280px; */
+    animation-name: serviceOffer;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+.servicesHead, .servicesText {
+    color: #fff;
+    font-weight: 900;
+}
+
+.boxDisplay  {
+    display: flex;
+    margin-top: 60px;
+    height: 80px;
+}
+
+.searchBox, .locationBox, .searchIcon {
+    display: flex;
+    align-items: center;
+    /* border-radius: 3px; */
+}
+
+.searchBox {
+    margin-left: 460px;
+    color: rgba(80, 109, 133, 0.6);
+    gap: 20px;
+}
+
+.locationBox {
+    color: #b2b2b2; 
+    gap: 23px;
+}
+
+.searchIcon {
+    width: 80px;
+    padding: 28px;
+    background-color: #feb63e;
+}
+
+.searchBox, .locationBox {
+    padding: 0 148px 0 24px;
+    color: rgba(80, 109, 133, 0.6);
+    background-color: #fff;   
+    border: 1px solid #e2e2e2;
+}
+
+.searchBox img {
+    width: 16px;
+    height: 16px;
+} 
+
+.locationBox img {
+    width: 18px;
+    height: 26px;
+}
+
+.searchIcon img {
+    width: 28px;
+    height: 28px;
+}
+
+.serviceOffered {
+    width: 1300px;
+    height: 128px;
+    margin: 100px auto 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    text-align: center;  
+    align-content: center;
+    border: 1px solid #e2e2e2;
+    background-color: #fff;
+}
+
+.serviceOffered img {
+    display: block;
+    margin: 0 0 15px 60px;
+}
+
+
+/* Animations  */
+
+@keyframes heroSectionBackground {
+    0% {
+        background-image: url("./hero-section-assets/hairstylistImg/hairstylist.png"); 
+    }
+
+    20% {
+        background-image: url("./hero-section-assets/barberImg/barber.png"); 
+    }
+
+    40% {
+        background-image: url("./hero-section-assets/tattoistImg/tattooist.png")
+    }
+
+    60% {
+        background-image: url("./hero-section-assets/manicuristImg/manicurist.png")
+    } 
+
+    80% {
+        background-image: url("./hero-section-assets/aestheticianImg/aesthetician.png");
+    }
+
+    100% {
+        background-image: url("./hero-section-assets/hairstylistImg/hairstylist.png"); 
+    }
+}
+/* 
+@keyframes display {
+    0% {
+        content: ""; 
+    }
+
+    60% {
+        content: "";
+    }
+
+    80% {
+        content: "an ";
+    }
+
+    100% {
+        content: ""; 
+    }
+} */
+
+
+@keyframes correctGrammar {
+    0% {
+        content: "a "; 
+    }
+
+    60% {
+        content: "a ";
+    }
+
+    80% {
+        content: "an ";
+    }
+
+    100% {
+        content: "a "; 
+    }
+}
+
+@keyframes services {
+    0% {
+        content: "hairstylist?"; 
+    }
+
+    20% {
+        content: "barber?"; 
+        text-align: center;
+
+    }
+
+    40% {
+        content: "tattooist?";
+    }
+
+    60% {
+        content: "manicurist?";
+        
+
+    } 
+
+    80% {
+        content: "aesthetician?";
+    }
+
+    100% {
+        content: "hairstylist?"; 
+    }
+}
+
+@keyframes serviceOffer {
+    0% {
+        content: "Find great hairstylists and gorgeous hairstyles"; 
+    }
+
+    20% {
+        content: "Find superb barbers and hairstyles"; 
+        text-align: center;
+    }
+
+    40% {
+        content: "Find talented tattoo artists and inspiring designs";
+        text-align: center; 
+    }
+
+    60% {
+        content: "Find excellent manicurists and dazzling nail designs";
+        text-align: center;
+    } 
+
+    80% {
+        content: "Find expert aestheticians";
+        text-align: center; 
+    }
+
+    100% {
+        content: "Find great hairstylists and gorgeous hairstyles"; 
+        text-align: center;
+    }
+}
+
+

@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    color: #1d252d;
+}
+
+.profilePageContainer {
+    display: flex;
+    width: 1600px;
+    max-width: 100%;
+}
+
+.ppSubContainer { 
+    padding: 48px 0 0 48px;
+}
+
+.profileText {
+    font-weight: 900;
+    font-size: 26px;
+}
+
+.myContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 40px;
+    gap: 40px;
+
+    /* display: flex;
+    padding-top: 40px;
+    gap: 40px; */
+}
+
+.ccInfoAndEmail {
+    width: 480px;
+    gap: 16px;
+}
+
+.ccPersonalInfo {
+    align-items: center;
+    padding: 40px 143px;   
+    /* margin-bottom: 16px; */
+}
+
+.profilePicture {
+    /* width: 120px; */
+    /* height: 120px; */
+    margin-bottom:24px;
+    font-size: 48px;
+    font-weight: 500;
+    padding: 27px 43px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    border: solid 2px #7091ac;
+    background-color: #7091ac;
+}
+
+.profileInfoName {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.profileInfoNumber {
+    margin: 16px 0 24px;
+    font-weight: 500;
+}
+
+.emailDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+}
+
+.profileEmail {
+    font-weight: 500;
+}
+
+.ccPasswordDiv {
+    width: 585px;
+    gap: 32px;
+    padding: 40px 40px 44px;
+}
+
+.changePassword {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.updateProfileButton {
+    align-self: flex-end;
+}
+
+
+/* Utilities */
+
+.borderAndRadius {
+    border-radius: 12px;
+    border: solid 1px #e4e4e4;
+    background-color: #fff;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Breakpoints */
+
+@media screen and (max-width: 850px){
+    .profileSideInfo {
+        display: none;
+    }
+
+    .ppSubContainer { 
+        /* padding: 0;
+        padding-bottom: 48px; */
+        padding: 0;
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+
+    .myContainer {
+        display: flex;
+        padding-top: 40px;
+        gap: 20px;
+    }
+
+    .ccInfoAndEmail {     
+        gap: 5px;
+    }
+
+    .ccPersonalInfo {
+        padding: 0;
+        padding: 20px;
+        gap: 14px;
+    }
+
+    .profilePicture {
+        margin-bottom: 0;
+    }
+
+    .profileInfoName {
+        text-align: center;
+    }
+
+    .profileInfoNumber {
+        margin: 0;
+    }
+
+    .emailDiv {
+        padding: 0;
+        padding: 7px 15px;
+        gap: 10px;
+    }
+
+    .editEmailButton {
+        padding: 7px 15px;
+    }
+
+    .ccPasswordDiv {
+        width: 0;
+        width: 100%;
+        gap: 20px;
+        padding: 0;
+        padding: 20px;
+    } 
+
+    .updateProfileButton {
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 450px)  {
+    .myContainer {
+        flex-wrap: wrap;
+        padding-top: 20px;
+        gap: 10px;
+    }
+
+    .ccInfoAndEmail { 
+        width: 100%;
+        gap: 10px;
+    }
+
+    .emailDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .changePassword {
+        font-size: 18px;
+    }
+
+    .updateProfileButton {
+        align-self: center;
+    }
+}

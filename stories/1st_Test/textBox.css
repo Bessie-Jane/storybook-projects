@@ -1,0 +1,53 @@
+.header {
+    color: rgb(70, 67, 67);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+.country {
+    width: 300px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    font-size: 1.07em;
+    color: rgb(91, 88, 88);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+option {
+    color: #000;
+}
+
+select {
+    width: 296px;
+    height: 48px;
+    margin-left: 1px;
+    margin-top: 20px;
+    padding: 10px; 
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #c1cad1;
+    color: #8ba6c1;
+}
+
+@media screen and (max-width: 834px) {
+    label {
+        font-size: 1em; 
+        color: red;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    label, select {
+        margin-right: 10px;
+    }
+
+    select {
+        width: 286px;  
+    }
+}

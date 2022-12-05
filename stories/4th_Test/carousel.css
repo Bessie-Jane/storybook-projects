@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+/* Widget */
+
+.parentDiv {
+    max-width: 100%;
+    width: 1600px;
+    height: 880px;
+    background-color: #111a24;
+}
+
+.typeDiv {
+    text-align: center;
+    color: #506d85;
+    padding-top: 86px;
+    text-transform: uppercase;
+}
+
+.categoryDiv {
+    width: 40%;
+    margin: 0 auto; 
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 4vw;
+    color: #2a3c4f;
+    padding-top: 56px;
+    font-size: 2.5vw;
+}
+
+.templateHolder {
+    position: relative;
+    padding-top: 50px;
+    display: flex;
+    gap: 2vh;
+    margin: 0 170px;
+    overflow: auto;
+}
+
+.parentArrowDiv {
+    position: relative;
+    margin: 0 10.625vw;
+    top: 15.625vw;
+}
+
+.arrowDiv {
+    width: 4vw;
+    height: 4vw;
+    padding: 1.25vw;
+    box-shadow: 0 2px 24px 0 var(--dark-10);
+    border-radius: 3.125vw;
+    /* top: 50%; */
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.leftIcon {
+    transform: translate(10%, -50%)
+}
+
+.rightIcon {
+    right: 0;
+    transform: translate(-10%, -50%)
+}
+
+.arrowSpan {
+    width: 1.5vw;
+    height: 1.5vw;
+    padding: 4px 5px;
+    object-fit: contain;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 15vw;
+    height: 6vw;
+    margin: 3.75vw 32.75vw 0; 
+    padding: 2vw 1.8vw; 
+    font-size: 1.3vw;
+    font-weight: bold;
+    background-color: #ffb63e;
+    text-align: center;
+    color: #fff;   
+}
+
+
+
+
+/* Image Component*/
+
+.carouselImg {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid red; */
+    flex: 0 0 calc((93vw - 340px) / 4);
+    width: calc((93vw - 340px) / 4);
+    height: calc((93vw - 340px) / (4 * 0.7));
+} 
+
+.styleAndPriceDiv {
+    position: absolute;
+    left: 21px;
+    bottom: 18px;
+}
+
+.style, .price {
+    color: #fff;
+}
+
+.style {
+    font-size: 1.25vw;
+    font-weight: 500; 
+    margin-bottom: 2px;
+}
+
+.price {
+    font-size: 3vw;
+    bottom: 18px;
+}
+
+
+@media screen and (max-width: 840px) {  
+
+    .categoryDiv {
+        justify-content: center;
+    }
+
+    .arrowDiv {
+        padding: 6px 5px;
+    }
+     
+    .leftIcon {
+        transform: translate(200%, 150%)
+    }
+
+    .rightIcon {
+        right: 0;
+        transform: translate(-200%, 150%)
+    }
+
+    .carouselImg {
+        flex: 0 0 calc((93vw - 340px) / 2);
+        width: calc((93vw - 340px) / 2);
+        height: calc((93vw - 340px) / (2 * 0.7));
+    }    
+}
+
+
+@media screen and (max-width: 415px) { 
+    .arrowDiv {
+        width: 4vw;
+        height: 4vw;
+        padding: 2.5vw;
+        box-shadow: 0 2px 24px 0 var(--dark-10);
+        border-radius: 3.125vw;
+        position: absolute;
+        background-color: #fff;
+        z-index: 1;
+    }
+    
+     
+    .leftIcon {
+        transform: translate(-200%, 500%)
+    }
+
+    .rightIcon {
+        right: 0;
+        transform: translate(200%, 500%)
+    }
+
+    .arrowSpan {
+        font-size: small;
+        position: absolute;
+        top: -2.5px;
+        left: 1px;
+        object-fit: contain;
+    }
+
+    .carouselImg {
+        width: calc((95vw - 62px) / 2);
+        height: calc((95vw - 62px) / (2 * 0.7));
+    }   
+    
+    .templateHolder {
+        margin: 0 10px;   
+    }
+}
+
+
+
+@media screen and (max-width: 320px) {  
+    .arrowSpan {
+        font-size: x-small;
+        position: absolute;
+        top: -2.5px;
+        left: 0.5px;
+        object-fit: contain;
+    }
+    
+}

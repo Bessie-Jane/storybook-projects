@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;600;500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.contactDetailsDiv {
+    display: flex;
+    gap: 22px;
+}
+
+.contactImage {
+    width: 90px;
+    height: 90px;
+    /* margin: 1px 22px 2px 0; */
+}
+
+.imageElement {
+    border-radius: 50px;
+}
+
+.contactAndEditDiv {
+    display: flex;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #1d252d;
+}
+
+.phoneNumber {
+    font-size: 15px;
+    margin-bottom: 4px;
+    color: #1d252d;
+}
+
+.email {
+    font-size: 15px;
+    margin-bottom: 7px;
+    color: #1d252d;
+}
+
+.service {
+    font-size: 12px;
+    color: #506d85;
+}
+
+.edit {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffad00;
+    text-transform: uppercase;
+}
+
+
+/* Breakpoints */
+
+@media screen and (max-width: 835px) {
+
+    .contactDetailsDiv {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
